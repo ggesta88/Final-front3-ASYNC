@@ -6,7 +6,7 @@ import dentista from '../images/doctor.jpg'
 
 const Card = ({dentist}) => {
 
-    const {dispatch} = useDentistStates()
+    const {state,dispatch} = useDentistStates()
 
   const addFav = ()=>{
     dispatch({type: 'ADD_TO_FAVORITES', payload: dentist})
@@ -14,13 +14,12 @@ const Card = ({dentist}) => {
 
   return (
       <div className="card">
-        <Link to={'/detail/' + dentist.id}>
+        <Link to={'/detail/' + dentist.id} className={state.theme}>
           <img src={dentista} alt="dentista"/>
           <h3>{dentist.name}</h3>
           <h4>{dentist.username}</h4>
-          
         </Link> 
-        <button onClick={addFav} className="favButton">Add fav</button>
+        <button onClick={addFav} className="favButton">ADD FAV</button>
       </div>
   );
 };

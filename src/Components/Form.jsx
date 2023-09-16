@@ -30,7 +30,7 @@ const Form = () => {
   }
 
   return (
-    <div>
+    <div className="form">
       <h2>Formulario de Contacto</h2>
       <input type="text" placeholder="Nombre" value={user.name} onChange={(event)=>setUser({...user, name:event.target.value})}/>
       <input type="email" placeholder="Correo Electronico" value={user.email} onChange={(event)=>setUser({...user, email:event.target.value})}/>

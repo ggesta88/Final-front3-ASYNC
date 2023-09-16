@@ -9,9 +9,8 @@ const Home = () => {
 
   return (
     <main className={state.theme}>
-      <h1>Home</h1>
+      <h1>Dentists</h1>
       <div className='card-grid'>
-        {console.log(state.theme)}
         {state.dentists.map(dentist => <Card dentist={dentist} key={dentist.id}/> )}
       </div>
     </main>

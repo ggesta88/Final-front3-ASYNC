@@ -6,8 +6,6 @@ import axios from 'axios'
 import imageDentist from '../images/doctor.jpg'
 
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
 const Detail = () => {
 
   const {state, dispatch} = useDentistStates()

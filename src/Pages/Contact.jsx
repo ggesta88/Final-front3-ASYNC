@@ -9,10 +9,12 @@ const Contact = () => {
   const {state} = useDentistStates()
 
   return (
-    <div className={state.theme}>
+    <div className='contact'>
+      <div className={state.theme}>
       <h2>Quieres saber mas?</h2>
       <p>Dejanos tus datos y te contactaremos</p>
-      <Form/>
+      <Form className={state.theme}/>
+    </div>
     </div>
   )
 }
