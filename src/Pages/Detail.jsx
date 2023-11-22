@@ -13,7 +13,7 @@ const Detail = () => {
   const {id} = useParams()
   const { name, email, phone, website} = state.dentist
   const url = 'https://jsonplaceholder.typicode.com/users/' + id
- 
+
   useEffect(() => {
     axios(url)
     .then(res => {

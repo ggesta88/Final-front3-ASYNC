@@ -35,8 +35,8 @@ const Form = () => {
       <input type="text" placeholder="Nombre" value={user.name} onChange={(event)=>setUser({...user, name:event.target.value})}/>
       <input type="email" placeholder="Correo Electronico" value={user.email} onChange={(event)=>setUser({...user, email:event.target.value})}/>
       <button onClick={handleSubmit}>Enviar</button>
-      {success && <h3 style={{color: "lightgreen"}}>Gracias {user.name}, te contactaremos cuando antes vía mail</h3>}
-      {error && <h4 style={{color:'red'}}>Por favor verifique su información nuevamente</h4>}
+      {success && <h3 style={{color: "lightgreen"}}>Gracias {user.name}, en breve estaremos en contacto vía mail</h3>}
+      {error && <h4 style={{color:'red'}}>Por favor verifique sus datos nuevamente</h4>}
     </div>
   );
 };
